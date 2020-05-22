@@ -1,0 +1,31 @@
+
+var upperCase = "QWERTYUIOPASDFGHJKLZXCVBNM"
+var lowerCase = "qwertyuiopasdfghjklzxcvbnm"
+var num = "1234567890"
+var specChar = "!@#$%^&*~+"
+
+
+
+
+
+
+
+ Questions to generate password:
+	confirm "Do you need a new password?", pwsConfirm
+	prompt "How many characters do you need in your password? 
+	 "PleaseSelect a number between 8 and 128." , pswLength = ()
+	confirm "Do you need numeric charcters in your password?"  numQuest = (T/F)  
+	confirm	"Do you need uppercase letters in your password?"  upQues = (T/F) 
+	confirm	"Do you need lowercase letters in your password?"  lowQues = (T/F) 
+	confirm	"Do you need special characters in your password?" specQues = (T/F) 
+
+- if pswConfirn, start with next, "Thank you, goodbye!"
+- if  pswLength < 8 || > 128, back to the top
+- if  numQues , numChoice = num.split(""); else numChoice = []
+- if  upQues , upChoice = upperCase.split(""); else upChoice = []
+- if  lowQues , lowChoice = lowerCase.split(""); else lowChoice = []
+- if  specQues , specChoice = specChar.split(""); else specChoice = []
+
+avaiableCharacters = numChoice.concat(upChoice, lowChoice, specChoice)
+
+for loop for number of characters needed
