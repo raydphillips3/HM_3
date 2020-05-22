@@ -15,6 +15,7 @@ Asked for type of characters:
 * Lowercase letters
 * Special Characters
 
+
 Used if/else statements and concat to form array of all potential characters
 
 Used for loop to select charcters randomly to generate password
