@@ -1,8 +1,8 @@
 # HM_3
 Homework 3 Random Password Generator
 
-Declared variables,
-Set arrays for potential password characters,
+-Declared variables,
+-Set arrays for potential password characters,
 Prompted for length of password
 Checked to make sure length selected was within the parameters of 8 to 128 characters long
 Asked for type of characters:
